@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.superevilmegateam.intelliguide.fragments.HomeScreenFragment">
+
+    
+    <ImageView
+        android:id="@+id/place_details_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/test_photo_butterfly"
+        android:scaleType="centerCrop"/>
+
+
+    <TextView
+        android:id="@+id/place_details_title"
+        android:layout_width="match_parent"
+        android:layout_below="@id/place_details_image"
+        android:gravity="center_horizontal"
+        android:fontFamily="sans-serif-light"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:text="Stary Browar"
+        android:textColor="@color/text_main"
+        android:layout_height="wrap_content" />
+
+    <com.superevilmegateam.intelliguide.views.LockableViewPager
+        android:layout_below="@id/place_details_title"
+        android:id="@+id/place_details_pager"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        />
+
+
+
+    <com.software.shell.fab.ActionButton
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/place_details_verify_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_alignBottom="@id/place_details_title"
+        android:layout_alignParentRight="true"
+        fab:type="DEFAULT"
+        fab:button_color="@color/accent_color"
+        fab:button_colorPressed="@color/fab_material_lime_900"
+        fab:image="@drawable/tick"
+        fab:image_size="24dp"
+        fab:shadow_color="#757575"
+        fab:shadow_radius="1.0dp"
+        fab:shadow_xOffset="0.5dp"
+        fab:shadow_yOffset="1.0dp"
+        fab:show_animation="@anim/fab_roll_from_down"
+        fab:hide_animation="@anim/fab_roll_to_down"
+        />
+
+    <com.software.shell.fab.ActionButton
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/place_details_edit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_alignBottom="@id/place_details_title"
+        android:layout_toLeftOf="@id/place_details_verify_btn"
+        fab:type="DEFAULT"
+        fab:button_color="@color/accent_color"
+        fab:button_colorPressed="@color/fab_material_lime_900"
+        fab:image="@drawable/edit"
+        fab:image_size="24dp"
+        fab:shadow_color="#757575"
+        fab:shadow_radius="1.0dp"
+        fab:shadow_xOffset="0.5dp"
+        fab:shadow_yOffset="1.0dp"
+        fab:show_animation="@anim/fab_roll_from_down"
+        fab:hide_animation="@anim/fab_roll_to_down"
+        />
+
+</RelativeLayout>

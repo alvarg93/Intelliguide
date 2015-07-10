@@ -1,0 +1,133 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.moodup.picado.fragments.RegisterFormFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:context="com.moodup.picado.fragments.LoginFormFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/accent_rounded_rect"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/register_form_nick_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:hint="@string/username"
+                    android:background="@drawable/light_orange_rounded_rect_shadow"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1" />
+
+                <EditText
+                    android:id="@+id/register_form_email_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:hint="@string/email_address"
+                    android:background="@drawable/light_orange_rounded_rect_shadow"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1" />
+
+                <EditText
+                    android:id="@+id/register_form_password_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/password"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/light_orange_rounded_rect_shadow"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+
+                <EditText
+                    android:id="@+id/register_form_password_repeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/passwrod_repeat"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/light_orange_rounded_rect_shadow"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+                <Button
+                    android:id="@+id/register_form_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Zarejestruj"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/orange_rounded_rect"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/register_form_fb_login"-->
+            <!--android:layout_width="250dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:clickable="true"-->
+            <!--android:elevation="1dp"-->
+            <!--android:padding="10dp"-->
+            <!--android:background="@drawable/facebook_blue_rounded_rect">-->
+            <!--<ImageView-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:src="@drawable/facebook_selected"/>-->
+            <!--<TextView-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="16dp"-->
+                <!--android:text="@string/Login_with_facebook"/>-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/new_place"
+        android:icon="@drawable/fab_plus_icon"
+        android:title="Nowe atrakcja"
+        app:showAsAction="always"/>
+    <item android:id="@+id/user"
+        android:icon="@drawable/user_placeholder"
+        android:title="Konto"
+        app:showAsAction="always"/>
+</menu>

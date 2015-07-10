@@ -1,0 +1,56 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        tools:context="com.superevilmegateam.intelliguide.fragments.HomeScreenFragment">
+
+        <EditText
+            android:id="@+id/new_place_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-light"
+            android:hint="Nazwa..."
+            android:textColor="@color/text_main"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ExpandableListView
+            android:id="@+id/new_place_categories_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/new_place_desc"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:gravity="top|left"
+            android:hint="Opis..." />
+
+        <RelativeLayout
+            android:id="@+id/new_place_map_container"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        
+
+        <Button
+            android:id="@+id/new_place_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/accent_rounded_rect"
+            android:text="Dodaj"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+</ScrollView>

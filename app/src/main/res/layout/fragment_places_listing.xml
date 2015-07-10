@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.superevilmegateam.intelliguide.fragments.HomeScreenFragment">
+
+
+    <Button
+        android:id="@+id/places_listing_map_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/accent_rounded_rect"
+        android:text="Mapa"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+    <ListView
+        android:id="@+id/places_listing_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/places_listing_map_btn"
+        android:dividerHeight="5dp"
+        android:divider="@android:color/transparent" />
+    
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/places_listing_progress_bar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"/>
+
+
+
+
+</RelativeLayout>

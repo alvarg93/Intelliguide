@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="10dp"
+    tools:context="com.superevilmegateam.intelliguide.fragments.HomeScreenFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/place_details_description"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_main"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16dp"
+                android:text="asdjfkhasldfhasldfhalskdjfhalskjdfhlaksdhf"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

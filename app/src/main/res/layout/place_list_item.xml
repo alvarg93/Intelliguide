@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_transparent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/place_item_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/test_photo_butterfly"
+        android:scaleType="centerCrop"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:riv_corner_radius="25dip"
+        app:riv_border_width="1dip"
+        app:riv_border_color="@color/text_secondary"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="repeat"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/place_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/text_main"
+        android:text="@string/use_my_localization"
+        android:textSize="18dp" />
+</LinearLayout>

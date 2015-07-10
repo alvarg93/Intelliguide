@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.superevilmegateam.intelliguide.fragments.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/profile_username" android:layout_width="match_parent" android:layout_height="30dp"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:text="@string/hello_blank_fragment" />
+    <TextView
+        android:id="@+id/profile_email" android:layout_width="match_parent" android:layout_height="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/hello_blank_fragment" />
+    <Button
+        android:id="@+id/profile_my_places" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/my_places"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/orange_rounded_rect" />
+    <Button
+        android:id="@+id/profile_logout" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/log_out"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/orange_rounded_rect" />
+
+</LinearLayout>
